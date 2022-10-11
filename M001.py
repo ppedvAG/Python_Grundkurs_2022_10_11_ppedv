@@ -158,7 +158,7 @@ print(text)
 
 # Übung3
 # Lege zwei Variablen an: Vorname befüllt mit Max und Nachname befüllt mit Mustermann
-# Verbinde diese zwei Variablen und zähle danach den Buchstaben 'M'
+# Verbinde diese zwei Variablen und zähle danach die Buchstaben 'M' und 'm'
 # Das Ergebnis soll 3 sein
 
 # Übung4
