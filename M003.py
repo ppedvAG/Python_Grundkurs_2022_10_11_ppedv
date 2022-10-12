@@ -60,7 +60,7 @@ else:
 
 # Verschaltelte if-Blöcke
 if a < b:
-	print(a, "ist größer als", b)
+	print(a, "ist kleiner als", b)
 	if a % 2 == 0:
 		print("a ist gerade")  # Der Codeblock muss wieder eingerückt werden
 	else:  # Anhand Einrückungen kann die else bei der inneren if oder der äußeren if angehängt werden
