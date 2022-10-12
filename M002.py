@@ -4,6 +4,7 @@
 # Ist veränderbar, es können neue Elemente hinzugefügt oder bestehende entfernt werden
 # Duplikate sind erlaubt
 # Verschiedene Datentypen sind erlaubt
+# Empfehlung: Immer die gleichen Typen in der Liste haben/nicht mischen
 
 liste = [1, 2, 3, 4, True, 'Ein Element']
 print(liste)  # Liste kann einfach mit print ausgegeben werden
@@ -19,8 +20,6 @@ print(liste[2:])  # [3, 4, True, 'Ein Element']
 
 # Range von der anderen Seite
 print(liste[-3:-1])  # [True, 'Ein Element'], Untergrenze (-3) exkludiert
-
-# Empfehlung: Immer die gleichen Typen in der Liste haben/nicht mischen
 
 # list(Objekt)
 text = "Ein Text"
@@ -101,7 +100,7 @@ print(liste)
 # Duplikate sind erlaubt
 # Datentypen können gemischt sein
 # Index vorhanden
-# Verschaltelbar
+# Verschachtelbar
 
 myTuple = (1, 2, 3, 'Test', False)
 print(myTuple)
