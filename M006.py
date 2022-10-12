@@ -139,7 +139,7 @@ def mixed(value1, *test, value2=123, **dictionary):
 
 
 mixed(2, "Text", 3, 4, 5, True)  # alles wird in *test gefüllt
-mixed(3, 3, 2, "Test", **testDict, value1=321, value2=123)  # bis "Test" in *test, dann **testDict, dann optionale Parameter
+# mixed(3, 3, 2, "Test", **testDict, value1=321, value2=123)  # bis "Test" in *test, dann **testDict, dann optionale Parameter
 
 
 def multiply(z1, z2, /, z3, z4):  # alle Argumente vor dem / müssen in der korrekten Reihenfolge angegeben werden
@@ -153,6 +153,19 @@ multiply(4, 2, z4=8, z3=9)  # die ersten zwei Argumente müssen in der korrekten
 # Wir wollen eine Funktion erstellen, die beliebig viele Zahlen als Parameter erhalten kann
 # Und uns die größte dieser Zahlen zurückgibt
 
+
+def Max(*numbers):
+	m = 0  # numbers[0] um auch negative Zahlen zu berücksichtigen
+	for i in numbers:
+		if i > m:
+			m = i
+	return m
+
+
+def Maximum(*numbers):
+	return max(numbers)
+
+
 # Übung 2:
 # Wir wollen eine Funktion erstellen, die einen String als Paramter erhält
 # Die Funktion soll dann in der Konsole ausgeben, aus wie vielen Klein- und Großbuchstaben der String besteht
@@ -160,14 +173,23 @@ multiply(4, 2, z4=8, z3=9)  # die ersten zwei Argumente müssen in der korrekten
 # ebenfalls ausgeben
 # Sonderzeichen: 4 | Groß: 3 | Klein: 12
 
+def countCase(text: str):
+	lower, upper, special = 0, 0, 0
+	for char in text:
+		if char.islower():
+			lower += 1
+		elif char.isupper():
+			upper += 1
+		else:
+			special += 1
+	print(f"Sonderzeichen: {special} | Groß: {upper} | Klein: {lower}")
 
 
+countCase("Ich bin ein Text")
 
 
-
-
-
-
-
-
-
+text = "5"
+print(text.islower())  # False
+print(text.isupper())  # False
+if text.upper() == text.lower():  # Alle Zeichen die kein Case haben sind False
+	print("X")
