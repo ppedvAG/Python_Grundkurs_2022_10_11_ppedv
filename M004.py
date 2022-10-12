@@ -140,6 +140,7 @@ for innen in verschachtelt:
 # Übung 1:
 # Stoppuhr
 # Bevor die Minute hochtickt, müssen die Sekunden einmal eine vollkommenen Umdrehung hinter sich gebracht haben
+# time.sleep(Float) Funktion hier nützlich
 
 # Übung 2:
 # Erstelle eine Schleife die das kleine Einmaleins von 1 bis 10 berechnet, und jeden einzelnen
