@@ -136,3 +136,13 @@ for innen in verschachtelt:
 		print(zahl)
 		if zahl == 5:
 			break  # break in einer verschachtelten Schleife springt in die äußere Schleife heraus
+
+# Übung 1:
+# Stoppuhr
+# Bevor die Minute hochtickt, müssen die Sekunden einmal eine vollkommenen Umdrehung hinter sich gebracht haben
+
+# Übung 2:
+# Erstelle eine Schleife die das kleine Einmaleins von 1 bis 10 berechnet, und jeden einzelnen
+# Schritt in der Konsole ausgibt
+# "1 x 1 = 1"
+# "10 x 10 = 100"
