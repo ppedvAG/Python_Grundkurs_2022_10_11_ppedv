@@ -20,7 +20,7 @@ print([num ** num for num in range(0, 11) if num ** num % 2 == 0])  # Ausdruck l
 # List-Comprehension mit 2 Schleifen
 print([f"{z1}x{z2}={z1*z2}" for z1 in range(1, 11) for z2 in range(1, 11)])  # Kleines 1x1 mit List-Comprehension
 
-testList2 = ["even" if num % 2 == 0 else "odd" for num in range(1, 101)]  # Ternary Operator in List-Comp
+testList2 = [f"{num} even" if num % 2 == 0 else f"{num} odd" for num in range(1, 101)]  # Ternary Operator in List-Comp
 print(testList2)
 
 stringList = ["IcH", "bIN", "eiN", "TeXt"]
