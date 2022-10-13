@@ -83,3 +83,23 @@ kind.sprechen()  # Methode von Mensch
 # Sie soll die __str__ Methode implementieren
 # Sie soll eine beschleunigungs Methode implementieren, diese akzeptiert einen Parameter, die neue Geschwindigkeit
 # Wenn die neue Geschwindigkeit <= maximale Geschwindigkeit ist, soll die derzeitige Geschwindigkeit angepasst werden
+
+class Fahrzeug:
+	def __init__(self, motorstatus, maxV, aktV):
+		self.motorstatus = motorstatus
+		self.maxV = maxV
+		self.aktV = aktV
+
+	def __str__(self):
+		return f"Das Fahrzeug hat eine Maximalgeschwindigkeit von {self.maxV}, es fährt gerade ({self.motorstatus}) und fährt {self.aktV}km/h."
+
+	def beschleunige(self, v: int):
+		if self.motorstatus:
+			if self.aktV + v > self.maxV:
+				print("Zu hoch")
+			else:
+				self.aktV += v
+
+fzg = Fahrzeug(True, 300, 0)
+fzg.beschleunige(200)
+print(fzg.__str__())
