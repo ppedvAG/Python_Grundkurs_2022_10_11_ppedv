@@ -78,7 +78,7 @@ kind.sprechen()  # Methode von Mensch
 # Erstelle eine Klasse Fahrzeug
 # Sie soll über die Props:
 # Motorstatus: bool
-# maximale Geschwindigket: int
+# maximale Geschwindigkeit: int
 # derzeitige Geschwindigkeit: int
 # Sie soll die __str__ Methode implementieren
 # Sie soll eine beschleunigungs Methode implementieren, diese akzeptiert einen Parameter, die neue Geschwindigkeit
